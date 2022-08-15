@@ -1,2 +1,2 @@
 # Learners_SIH
-Online knowledge assessment tool for Smart India Hackathon 2022
+Online knowledge assessment tool project for Smart India Hackathon 2022
