@@ -8,6 +8,5 @@ This project contains code for online knowledge assessment.
  - Docker
  - Nginx
 
-
 ## Architecture
 ![Alt text](architecture/architecture-diagram.png "Architecture Diagram")
