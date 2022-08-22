@@ -1,4 +1,4 @@
-import { getUser, getUsers, updateUser } from "./handlers";
+import { getUser, getUsers, updateUser,createUser } from "./handlers";
 
 export const userRoutes = [
     {
@@ -13,7 +13,12 @@ export const userRoutes = [
     },
     {
         method: 'PUT',
-        path: '/users/{user_id}',
+        path: '/user_up',
         handler: updateUser
+    },
+    {
+        method: 'POST',
+        path: '/user',
+        handler: createUser
     }
 ];
