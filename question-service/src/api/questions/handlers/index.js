@@ -22,10 +22,17 @@ export async function getQuestion(request, h) {
     }
 }
 
-export async function updateUser(request, h) {
+export async function updateQuestion(request, h) {
     try {
-        const user = request.params.id;
-        return h.response(ResponseUtility.generateSuccessResponse({user}));
+        const qs = await Question.update(
+            {
+                question:"yes",
+            },
+            {
+                where:{id:"74567"}
+            }
+        );
+        console.log(qs);
     } catch (error) {
         return h.response(ResponseUtility.generateFailureResponse(error)).code(500);
     }

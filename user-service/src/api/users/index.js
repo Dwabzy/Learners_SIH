@@ -13,12 +13,12 @@ export const userRoutes = [
     },
     {
         method: 'PUT',
-        path: '/user_up',
+        path: '/userupd',
         handler: updateUser
     },
     {
         method: 'POST',
-        path: '/user',
+        path: '/userc',
         handler: createUser
     }
 ];
