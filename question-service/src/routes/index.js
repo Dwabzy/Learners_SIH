@@ -1,13 +1,13 @@
 import { healthRoutes } from "../api/health";
-import { userRoutes } from "../api/users";
+import { questionRoutes } from "../api/questions";
 
 
 export const routes = [];
 
 // Declare all routes
 routes.push(...healthRoutes);
-routes.push(...userRoutes);
+routes.push(...questionRoutes);
 
 routes.forEach(function (element, index, array) {
-    array[index].path = '/user-service' + element.path;
+    array[index].path = '/question-service' + element.path;
 });

@@ -1,44 +1,38 @@
 import { DataTypes } from "sequelize";
 import { sequelize } from "..";
 
-export const User = sequelize.define('user', {
+export const Question = sequelize.define('exam_question_bank', {
     // Model attributes are defined here
     id: {
         type: DataTypes.INTEGER,
         primaryKey: true
     },
-    first_name: {
+    question: {
         type: DataTypes.TEXT,
     },
-    last_name: {
+    option_1: {
         type: DataTypes.TEXT
     },
-    email: {
+    option_2:{
         type: DataTypes.TEXT
     },
-    mobile: {
+    option_3 :{
         type: DataTypes.TEXT
     },
-    username: {
+    option_4: {
         type: DataTypes.TEXT
     },
-    password: {
+    answer: {
         type: DataTypes.TEXT
     },
-    user_role_id: {
+    sub_category_id: {
         type: DataTypes.INTEGER
     },
-    gender: {
+    difficulty_level_id: {
         type: DataTypes.TEXT
     },
-    dob: {
+    info: {
         type: DataTypes.TEXT
-    },
-    state: {
-        type: DataTypes.TEXT
-    },
-    organization_id: {
-        type: DataTypes.INTEGER
     },
     created_at: {
         type: DataTypes.DATE
