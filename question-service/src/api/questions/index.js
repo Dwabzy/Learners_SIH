@@ -1,4 +1,4 @@
-import { getQuestion, getQuestions, updateQuestion} from "./handlers";
+import { createQuestion, getQuestion, getQuestions, updateQuestion} from "./handlers";
 
 export const questionRoutes = [
     {
@@ -15,5 +15,10 @@ export const questionRoutes = [
         method: 'PUT',
         path: '/qupd',
         handler: updateQuestion
+    },
+    {
+        method: 'POST',
+        path: '/qcreate',
+        handler: createQuestion
     }
 ];

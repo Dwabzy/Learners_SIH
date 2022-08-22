@@ -32,7 +32,7 @@ export const Question = sequelize.define('exam_question_bank', {
         type: DataTypes.TEXT
     },
     info: {
-        type: DataTypes.TEXT
+        type: DataTypes.JSONB
     },
     created_at: {
         type: DataTypes.DATE
