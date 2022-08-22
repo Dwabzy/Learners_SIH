@@ -3,6 +3,7 @@ import { server as _server } from '@hapi/hapi';
 import { routes } from './src/routes';
 
 const init = async () => {
+    
 
     const server = _server({
         port: process.env.PORT,
