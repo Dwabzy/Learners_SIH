@@ -11,9 +11,9 @@ export const userRoutes = [
         path: '/users/{id}',
         handler: getUser
     },
-    // {
-    //     method: 'PUT',
-    //     path: '/users/{user_id}',
-    //     handler: updateUser
-    // }
+    {
+        method: 'PUT',
+        path: '/users/{user_id}',
+        handler: updateUser
+    }
 ];
