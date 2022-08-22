@@ -23,7 +23,6 @@ export async function getUser(request, h) {
     }
 }
 
-<<<<<<< HEAD
 export async function updateUser(request, h) {
     try {
         const user = await User.update(
@@ -48,7 +47,7 @@ export async function createUser(req, h){
         return h.response(ResponseUtility.generateFailureResponse(error)).code(500);
     }
 };
-=======
+
 
 export async function updateUser (req, h) {
     const user_id=request.params.id;
@@ -70,6 +69,5 @@ export async function updateUser (req, h) {
         return { err: err };
   
     });
-  }
+}
   
->>>>>>> 79da7efe290544ed348a9b09446669416a601690
