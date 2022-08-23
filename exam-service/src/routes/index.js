@@ -1,13 +1,13 @@
+import { examRoutes } from "../api/exams";
 import { healthRoutes } from "../api/health";
-import { userRoutes } from "../api/users";
 
 
 export const routes = [];
 
 // Declare all routes
 routes.push(...healthRoutes);
-routes.push(...userRoutes);
+routes.push(...examRoutes);
 
 routes.forEach(function (element, index, array) {
-    array[index].path = '/user-service' + element.path;
+    array[index].path = '/exam-service' + element.path;
 });
