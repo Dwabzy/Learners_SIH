@@ -37,3 +37,12 @@ export async function updateQuestion(request, h) {
         return h.response(ResponseUtility.generateFailureResponse(error)).code(500);
     }
 }
+
+export async function createQuestion(req, h){
+    try {
+        const qcreate = await Question.create({ id:"52023", question: "what",option_1: "a", option_2: "b", option_3: "c",option_4:"d",answer:"2",sub_category_id:"680",difficulty_level_id:"24",info:"null" });
+    console.log(qcreate);
+    } catch(error) {
+        return h.response(ResponseUtility.generateFailureResponse(error)).code(500);
+    }
+};

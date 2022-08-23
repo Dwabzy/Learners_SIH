@@ -1,44 +1,33 @@
-import { DataTypes } from "sequelize";
-import { sequelize } from "..";
 
-export const User = sequelize.define('user', {
+import { sequelize } from "..";
+import { DataTypes } from "sequelize";
+
+export const Exam = sequelize.define('exam', {
     // Model attributes are defined here
     id: {
         type: DataTypes.INTEGER,
         primaryKey: true
     },
-    first_name: {
-        type: DataTypes.TEXT,
+    time_limit: {
+        type:DataTypes.INTEGER,
     },
-    last_name: {
+    name: {
         type: DataTypes.TEXT
     },
-    email: {
+    description: {
         type: DataTypes.TEXT
     },
-    mobile: {
-        type: DataTypes.TEXT
-    },
-    username: {
-        type: DataTypes.TEXT
-    },
-    password: {
-        type: DataTypes.TEXT
-    },
-    user_role_id: {
-        type: DataTypes.INTEGER
-    },
-    gender: {
-        type: DataTypes.TEXT
-    },
-    dob: {
-        type: DataTypes.TEXT
-    },
-    state: {
-        type: DataTypes.TEXT
+    info: {
+        type: DataTypes.JSONB
     },
     organization_id: {
         type: DataTypes.INTEGER
+    },
+    created_by: {
+        type: DataTypes.INTEGER
+    },
+    target_classes: {
+        type: DataTypes.JSONB
     },
     created_at: {
         type: DataTypes.DATE
