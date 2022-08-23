@@ -21,4 +21,13 @@ export async function getExam(request, h) {
     }
 }
 
+export async function createExam(req, h){
+    try {
+        const examCreate = await Question.create({ id:"03", time_limit: "60",name:"Preliminary",info:"First level of exam",organization_id:"10",created_by:"R.M.K.",target_classes:"5,7" });
+    console.log(examCreate);
+    } catch(error) {
+        return h.response(ResponseUtility.generateFailureResponse(error)).code(500);
+    }
+};
+
 

@@ -1,4 +1,4 @@
-import { getExam, getExams} from "./handlers";
+import { getExam, getExams,createExam} from "./handlers";
 
 export const examRoutes = [
     {
@@ -10,5 +10,10 @@ export const examRoutes = [
         method: 'GET',
         path: '/exams/{id}',
         handler: getExam
+    },
+    {
+        method: 'POST',
+        path: '/exams',
+        handler: createExam
     },
 ];
